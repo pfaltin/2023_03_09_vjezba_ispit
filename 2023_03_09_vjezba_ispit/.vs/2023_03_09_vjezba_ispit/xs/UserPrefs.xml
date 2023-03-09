@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{36BFB71F-3EBB-49E8-BD13-5A11C732C57E}|Default">
+  <MonoDevelop.Ide.ItemProperties.PracticeExam.WebApp PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PracticeExam.WebApp/Repositories/WineRepository.cs">
+    <Files>
+      <File FileName="PracticeExam.WebApp/Repositories/WineRepository.cs" Line="32" Column="59" />
+      <File FileName="PracticeExam.WebApp/DemoData/DemoDataClass.cs" Line="4" Column="27" />
+      <File FileName="PracticeExam.WebApp/Controllers/WineController.cs" Line="11" Column="11" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="2023_03_09_vjezba_ispit" expanded="True">
+            <Node name="PracticeExam.WebApp" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DemoData" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="WineRepository.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
