@@ -6,34 +6,31 @@ namespace PracticeExam.WebApp.Repositories
 {
 	public class WineRepository
 	{
-        public WineRepository()
-        {
-        }
-        DemoDataClass dataClass = new DemoDataClass();
+
+        DemoDataClass _dataClass = new DemoDataClass();
         private static List<string> Regions;
         private static List<Wine> _wines;
-        
+       
 
         public WineRepository()
         {
             _dataClass = new DemoDataClass();
-            if (Wines == null)
+            if (_wines == null)
             {
-                Wines = new List<Wine>();
-                SimulateDatabase();
+                _wines = _dataClass.GetDemoWines(); 
             }
         }
 
         public List<Wine> GetWines()
         {
-            return Wines;
+            return _wines;
         }
 
         public void CreateNewWine(Wine Wine, int RegionId)
         {
-            Wine.Region = _RegionRepo.GetRegionById(RegionId);
-            Wine.WineId = Wines.LastOrDefault().WineId + 1;
-            Wines.Add(Wine);
+            Wine.Region = _dataClass.GetDemoRegions().ElementAt(RegionId);
+            Wine.Id = _wines.LastOrDefault().Id + 1;
+            _wines.Add(Wine);
         }
 
 

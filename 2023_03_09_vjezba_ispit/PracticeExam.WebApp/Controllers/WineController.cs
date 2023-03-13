@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AspNetCore;
+using Microsoft.AspNetCore.Mvc;
 using PracticeExam.WebApp.Models;
 using PracticeExam.WebApp.Repositories;
 
@@ -18,7 +19,7 @@ public class WineController : Controller
     public IActionResult Index()
     {
         // TODO: ispis svih vina u kolekciji
-        return View();
+        return View(_WineRepository.GetWines());
     }
 
     public IActionResult Create()
@@ -29,16 +30,31 @@ public class WineController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult CreateWine()
+    public IActionResult CreateWine(
+        string? name,
+        string? description,
+        string? country,
+        string? region,
+        decimal? price,
+        int? year
+        )
     {
         // TODO:  logika za unos podataka dobivenih iz HTML forme
+
+        ViewBag.Name = name;
+        ViewBag.Description = description;
+        ViewBag.Country = country;
+        ViewBag.Region = region; 
+        ViewBag.Price = price;
+        ViewBag.Year = year;
+
         try
         {
             return RedirectToAction(nameof(Index));
         }
         catch (Exception ex)
         {
-            return View();
+            return View("Views_Wine_Index");
         }
     }
 }

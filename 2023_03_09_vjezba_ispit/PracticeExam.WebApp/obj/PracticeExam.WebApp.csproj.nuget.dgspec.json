@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pablo/Downloads/2023_03_09_vjezba_ispit/PracticeExam.WebApp/PracticeExam.WebApp.csproj": {}
+    "C:\\Users\\petar.faltin\\Source\\Repos\\2023_03_09_vjezba_ispit\\2023_03_09_vjezba_ispit\\PracticeExam.WebApp\\PracticeExam.WebApp.csproj": {}
   },
   "projects": {
-    "/Users/pablo/Downloads/2023_03_09_vjezba_ispit/PracticeExam.WebApp/PracticeExam.WebApp.csproj": {
+    "C:\\Users\\petar.faltin\\Source\\Repos\\2023_03_09_vjezba_ispit\\2023_03_09_vjezba_ispit\\PracticeExam.WebApp\\PracticeExam.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pablo/Downloads/2023_03_09_vjezba_ispit/PracticeExam.WebApp/PracticeExam.WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\petar.faltin\\Source\\Repos\\2023_03_09_vjezba_ispit\\2023_03_09_vjezba_ispit\\PracticeExam.WebApp\\PracticeExam.WebApp.csproj",
         "projectName": "PracticeExam.WebApp",
-        "projectPath": "/Users/pablo/Downloads/2023_03_09_vjezba_ispit/PracticeExam.WebApp/PracticeExam.WebApp.csproj",
-        "packagesPath": "/Users/pablo/.nuget/packages/",
-        "outputPath": "/Users/pablo/Downloads/2023_03_09_vjezba_ispit/PracticeExam.WebApp/obj/",
+        "projectPath": "C:\\Users\\petar.faltin\\Source\\Repos\\2023_03_09_vjezba_ispit\\2023_03_09_vjezba_ispit\\PracticeExam.WebApp\\PracticeExam.WebApp.csproj",
+        "packagesPath": "C:\\Users\\petar.faltin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\petar.faltin\\Source\\Repos\\2023_03_09_vjezba_ispit\\2023_03_09_vjezba_ispit\\PracticeExam.WebApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/pablo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\petar.faltin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

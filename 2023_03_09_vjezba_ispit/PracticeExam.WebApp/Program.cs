@@ -1,3 +1,5 @@
+using PracticeExam.WebApp.Repositories;
+
 namespace PracticeExam.WebApp
 {
     public class Program
@@ -8,6 +10,7 @@ namespace PracticeExam.WebApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddTransient<WineRepository>();
 
             var app = builder.Build();
 
